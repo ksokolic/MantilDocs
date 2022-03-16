@@ -9,7 +9,7 @@ const config = {
   title: 'Mantil Docs',
   tagline: 'Mantil is cool!',
   url: 'https://ksokolic.github.io',
-  baseUrl: '/MantilDocs',
+  baseUrl: '/MantilDocs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
