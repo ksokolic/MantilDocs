@@ -1,4 +1,3 @@
-
 Mantil consists of two main components, node and CLI. [CLI](cli_install.md) is the Mantil binary you
 install on your local machine while the node is located in AWS. A node consists of Lambda functions and other AWS resources used for managing Mantil projects in the cloud and will be explained in detail in the upcoming chapter.
 
