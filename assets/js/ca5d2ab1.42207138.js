@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmantil_docs=self.webpackChunkmantil_docs||[]).push([[8389],{3856:function(e){e.exports=JSON.parse('{"permalink":"/MantilDocs/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

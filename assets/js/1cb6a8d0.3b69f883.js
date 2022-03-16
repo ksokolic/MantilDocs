@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmantil_docs=self.webpackChunkmantil_docs||[]).push([[1141],{618:function(l){l.exports=JSON.parse('{"permalink":"/MantilDocs/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

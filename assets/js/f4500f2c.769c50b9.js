@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmantil_docs=self.webpackChunkmantil_docs||[]).push([[9805],{2944:function(l){l.exports=JSON.parse('{"allTagsPath":"/MantilDocs/blog/tags","slug":"/MantilDocs/blog/tags/hello","name":"hello","count":2,"permalink":"/MantilDocs/blog/tags/hello"}')}}]);
