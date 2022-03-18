@@ -10,7 +10,7 @@ This guide has accompanying video available on [youtube](https://youtu.be/Fp64Vg
 
  * Go
  * Mantil [cli](cli_install.md)
- * Mantil [node](aws_install.md)
+ * Mantil [node](aws_detailed_setup/node_install.md)
  
 We assume that you are Go programmer so you have Go installed. After that you
 need to download Mantil cli and set up Mantil node on your AWS account. 

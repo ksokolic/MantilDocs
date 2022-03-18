@@ -5,7 +5,7 @@ sidebar_position: 2
 # Mantil CLI Installation
 
 Mantil consists of two main components, node and CLI. CLI is the Mantil binary you
-install on your local machine. [Node](aws_setup/node_install.md) is located in AWS and is a set of functions used for managing Mantil projects.
+install on your local machine. [Node](aws_detailed_setup/node_install.md) is located in AWS and is a set of functions used for managing Mantil projects.
 
 To install CLI, follow the steps below for your OS.
 

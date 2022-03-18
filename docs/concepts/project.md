@@ -123,4 +123,4 @@ so you can see the history of all changes. You should not edit this file.
 Test folder if where your API end to end tests are stored. Explore
 [ping](https://github.com/mantil-io/template-ping/blob/master/test/ping_test.go)
 example to get an idea of how to create requests and explore results. Read more about
-[testing](Usage/testing.md) in Mantil.
+[testing](usage/testing.md) in Mantil.
