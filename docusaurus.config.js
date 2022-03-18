@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Mantil Docs',
   tagline: 'Mantil is cool!',
-  url: 'https://mantil-io.github.io',
-  baseUrl: '/MantilDocs/',
+  url: 'http://docs.mantil.com',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
