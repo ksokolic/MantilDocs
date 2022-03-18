@@ -8,12 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Mantil Docs',
   tagline: 'Mantil is cool!',
-  url: 'https://ksokolic.github.io',
+  url: 'https://mantil-io.github.io',
   baseUrl: '/MantilDocs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'ksokolic', // Usually your GitHub org/user name.
+  organizationName: 'mantil-io', // Usually your GitHub org/user name.
   projectName: 'MantilDocs', // Usually your repo name.
   trailingSlash: false,
 
