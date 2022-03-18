@@ -1,6 +1,8 @@
-# API Configuration
+---
+sidebar_position: 1
+---
 
-## Environment Variables
+# Environment Variables
 
 APIs come preconfigured with default settings for memory size, timeout and environment variables. You can customize these settings using the `config/environment.yml` file. Values can be defined on a project, stage or function level. If the same value is defined on multiple levels, the lowest level will take precedence. The final values will be visible in `config/state.yml` after deployment.
 
@@ -125,76 +127,3 @@ stages:
       MANTIL_PROJECT: my-project
       MANTIL_STAGE: production
 ```
-<p align="right"> <a href="https://github.com/mantil-io/mantil/tree/master/docs#mantil-documentation">↵ Back to Documentation Home!</a></p>
-
-#
-
-## Scheduled execution
-
-Using the `cron` field, you can set up a rule to execute an API on a schedule. For example, with the following setup, the default method of the `one` API will be executed every minute:
-```
-project:
-  stages: 
-    - name: development
-      functions:
-      - name: one
-        cron: "* * * * ? *"
-        env:
-          KEY: function
-```
-For more information about the cron syntax, please refer to the AWS docs:
-https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html
-
-<p align="right"> <a href="https://github.com/mantil-io/mantil/tree/master/docs#mantil-documentation">↵ Back to Documentation Home!</a></p>
-
-#
-
-## Private APIs
-
-Using the `private` field, you can set your functions as private, which will require additional authorization to execute methods through API. Private and public keys are generated when creating a new stage which are then used to generate JWT on each request. This token is verified through the authorizer Lambda function. Token generation is done automatically if you're using the `invoke` command.
-
-<p align="right"> <a href="https://github.com/mantil-io/mantil/tree/master/docs#mantil-documentation">↵ Back to Documentation Home!</a></p>
-
-#
-
-## Custom domain names
-
-Custom domain names are simpler and more intuitive URLs that you can provide to your API users. By default, you can access APIs through the default API gateway URLs, which are generated for each stage and have the following format:
-```
-https://<http-api-id>.execute-api.<region>.amazonaws.com/<api_name>/<method_name>
-```
-and
-```
-wss://<ws-api-id>.execute-api.<region>.amazonaws.com/$default
-```
-
-In order to set up a custom domain for your stage, you need the following:
-- a Route 53 public hosted zone
-- a registered domain configured to use the name servers of that hosted zone. The easiest way to achieve this is by registering the domain with Route 53. This will automatically create a hosted zone.
-- a certificate covering all the subdomains that will be created
-
-Then you can use the `custom_domain` field in the stage config to set up the domain. It accepts the following arguments:
-`domain_name` - (Required) The registered domain name.
-`http_subdomain` - (Optional) The subdomain to use for HTTP APIs. Defaults to `api`.
-`ws_subdomain` - (Optional) The subdomain to use for WebSocket APIs. Defaults to `ws`.
-`cert_domain` - (Optional) The domain name of the certificate. Defaults to the value of the `domain_name` parameter.
-`hosted_zone_domain` - (Optional) The domain name of the hosted zone. Defaults to the value of the `domain_name` parameter.
-
-For example, the simplest setup for the domain `example.com` would look like this:
-```
-project:
-  stages: 
-    - name: production
-      custom_domain:
-        domain_name: example.com
-```
-After deploying this stage it will have the following endpoints:
-```
-https://api.example.com
-```
-and
-```
-wss://ws.example.com
-```
-
-<p align="right"> <a href="https://github.com/mantil-io/mantil/tree/master/docs#mantil-documentation">↵ Back to Documentation Home!</a></p>

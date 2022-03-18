@@ -57,6 +57,11 @@ const config = {
             position: 'left',
           },
           {
+            href: 'https://blog.mantil.com/',
+            label: 'Blog',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/mantil-io/mantil',
             label: 'GitHub',
             position: 'right',
@@ -68,12 +73,12 @@ const config = {
         links: [
           {
             title: 'Docs',
-            items: [
+            /**items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: 'intro',
               },
-            ],
+            ],*/
           },
           {
             title: 'Community',
@@ -95,10 +100,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+              /**{
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',

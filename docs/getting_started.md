@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+---
+
+# Your First Mantil Project
+
 This guide has accompanying video available on [youtube](https://youtu.be/Fp64VgSLoTQ).
 
 ## Prerequisites

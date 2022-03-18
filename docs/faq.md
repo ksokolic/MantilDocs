@@ -1,3 +1,7 @@
+---
+sidebar_position: 12
+---
+
 # FAQ
 
 ## How Mantil is different than (Cloudformation, SAM, CDK, Terraform, Serverless Framework)?
@@ -16,32 +20,6 @@ What makes Mantil different?
  * enables easy firing multiple project stages (deployments)
 
 ## What I need to start using Mantil?
-Go, [Mantil cli](cli_install.md) and an [AWS account credentials](https://github.com/mantil-io/mantil/blob/master/docs/aws_install.md#aws-credentials).  
+Go, [Mantil cli](cli_install.md) and an [AWS account credentials](aws_setup/aws_credentials.md).  
 Mantil is tool for Go developers so you need Go to build you APIs code into Lambda functions. You also need access to an AWS account. 
-
-
-<p align="right"> <a href="https://github.com/mantil-io/mantil/tree/master/docs#mantil-documentation">↵ Back to Documentation Home!</a></p>
-
-
-<!--
-+* usporedba s drugim alatima
-
-+* Postoji li lokalna razvojna okolina - ne
-+* Moram li imati svoj AWS account - da
-+* Moram li imati prava na AWS-u - da, ali samo za install fazu, nakon toga vise ne treba, u buducim verzijama nece morati imati nikakva AWS prava napomenuti to
-+* Koliko ce me kostatiti to na AWS-u - ma nista,
-+* Sto moram imati na svom racunalu - mantil cli i Go, sve ostalo je u cloudu
-
-* Sto ce Mantil kreirati na mom AWS accountu - popis za node, za project, objasniti naming, tagging
-* Kako da znam koji su resursi kreirani od strane Mantila - objasniti naming, tagging
-* Kako da znam sto se dogadja u mojoj lambda funkciji - invoke pokazuje logove
-* Mogu li imati vise deploymenta jednog projekta
-
-* Postoji li Visual Studio Code Mantil plugin
-* Podrzava li Mantil Step Functions?
-
-* The one about AWS Console - use it for exploring, use other repeatable tool for modifiying
-
-* In what AWS Regions is Mantil supported?
--->
 

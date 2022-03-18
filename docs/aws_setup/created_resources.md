@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+---
+
+# Created Resources
+
 To see what resources are created for the node run `mantil aws resources` command:
 ```
 ➜ mantil aws resources

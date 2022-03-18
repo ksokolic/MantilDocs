@@ -31,9 +31,7 @@ However, depending on your specific use case there are some potential downsides 
 - less flexibility when querying data. If you can't anticipate how your data will be accessed in advance, DynamoDB might not be a good choice.
 - it has a steep learning curve for modelling data, especially when coming from a SQL background.
 
-For simple use cases, Mantil offers a [KV store](https://github.com/mantil-io/mantil.go/blob/845476e8b2dae9333158fab6a48c7779423841a9/kv.go#L32) implementation backed by DynamoDB. This is used in some of our templates, such as:
-https://github.com/mantil-io/template-todo
-https://github.com/mantil-io/template-chat
+For simple use cases, Mantil offers a [KV store](https://github.com/mantil-io/mantil.go/blob/845476e8b2dae9333158fab6a48c7779423841a9/kv.go#L32) implementation backed by DynamoDB. This is used in some of our templates, such as: [todo](https://github.com/mantil-io/template-todo) and [chat](https://github.com/mantil-io/template-chat).
 
 For more complex use cases you can create a DynamoDB table by importing [mantil.go](https://github.com/mantil-io/mantil.go) and using the [DynamodbTable](https://github.com/mantil-io/mantil.go/blob/845476e8b2dae9333158fab6a48c7779423841a9/dynamo.go#L49) function. This will ensure that the created table follows the standard Mantil resource naming convention and that it will be cleaned up when the stage is destroyed.
 

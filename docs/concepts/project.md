@@ -1,47 +1,8 @@
-# General Concepts
+---
+sidebar_position: 3
+---
 
-Two probably new concepts in Mantil are node and stage. So let's first familiarize yourself with them.
-
-## Node
-
-Mantil consists of two main components, node and CLI. CLI is mantil binary you
-[install](cli_install.md) on your local machine.
-Node is located in AWS. Node is set of functions used for managing Mantil
-projects. First, you use CLI to [install a node into your AWS account](aws_install.md). After that, CLI issues commands, and the node executes them in the cloud.
-
-Node is installed into a region of an AWS account. You can have multiple nodes
-in the same or different AWS accounts. When you are setting project stage you
-choose a node for that stage.
-
-
-## Stage
-
-The stage is an installation of a project into the cloud. Before creating stage, the project is
-just a set of files. Once you create a stage that builds Lambda functions from your
-api's, API Gateway for that functions and other supporting resources. With that
-project gets a live endpoint where you can execute your api's.
-
-The stage is located on a node. While creating stage `mantil stage
-new` you specify node for the stage. You can
-have multiple stages of the project. Each can be located on a different node.
-
-While working in the project, there is a notion of default stage. One stage is always
-default, so it is the target of all other project commands. So, for example, when you
-deploy/test/watch logs..., you execute those commands on the default stage.
-To see all the stages and see which one is default there is `mantil stage
-ls` command, and to change default `mantil
-stage use`.
-
-### Stage endpoint
-
-When created each stage gets two endpoints: HTTP and WebSocket. Endpoint is URL
-where stage API's are exposed. 
-
-HTTP endpoint will be something like:
-_https://lh5rfrc3gf.execute-api.eu-central-1.amazonaws.com_, and WebSocket:
-__wss://lh5rfrc3gf.execute-api.eu-central-1.amazonaws.com_.
-
-## Project Structure
+# Project Structure
 
 The project is a set of files on the disk and, of course, in a version control system.
 You are creating new project with `mantil new`.
@@ -83,7 +44,7 @@ project with two API's: ping and second.
 ```
 
 
-### API
+## API
 
 API folder is a set of Go packages where each package after deployment will become
 exposed on the endpoint URL.
@@ -131,12 +92,12 @@ The same as rules as for default AWS [Go
 handler](https://docs.aws.amazon.com/lambda/latest/dg/golang-handler.html) with
 the added convention that each method in the API struct is exposed as a URL path.
 
-### Public folder
+## Public folder
 
 A public folder is a place for your static site content. Put an _index.html_ file in
 the _/public_ folder, and it will be visible at the endpoint root.
 
-### Build folder
+## Build folder
 
 The build folder is automatically generated on each deploy and contains the main package
 for each API which is code that transforms your API's to Lambda functions.
@@ -149,7 +110,7 @@ Code in build folder uses [Mantil Go
 SDK](https://github.com/mantil-io/mantil.go) to transform your API's to AWS
 Lambda functions.
 
-### Config folder
+## Config folder
 
 In config folder _environment.yml_ is a place where you can set environment
 variables for each Stage. So you can configure different behavior in different
@@ -157,12 +118,9 @@ stages.
 _state.yml_ is a project database file maintained by Mantil. It is stored in the project
 so you can see the history of all changes. You should not edit this file.
 
-### Test
+## Test
 
 Test folder if where your API end to end tests are stored. Explore
 [ping](https://github.com/mantil-io/template-ping/blob/master/test/ping_test.go)
 example to get an idea of how to create requests and explore results. Read more about
 [testing](Usage/testing.md) in Mantil.
-
-
-

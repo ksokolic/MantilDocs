@@ -1,9 +1,14 @@
+---
+sidebar_position: 2
+---
+
+# Node Installation 
+
 AWS credentials are needed just for initial setting up Mantil in your account.
 After the initial setup, the other commands won't need your AWS credentials.
 
 To install Mantil in a region of an AWS account, use `mantil aws install`. This
-will create Mantil
-[node](https://github.com/mantil-io/mantil/blob/master/docs/concepts.md#node) in
+will create Mantil node in
 your AWS account. A node consists of a set of Lambda functions, API Gateway and a
 S3 bucket. After the node is created, all other communication is between the CLI and
 the node. 
