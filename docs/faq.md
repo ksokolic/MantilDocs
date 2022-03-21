@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 13
 ---
 
 # FAQ
@@ -21,5 +21,5 @@ What makes Mantil different?
 
 ## What I need to start using Mantil?
 Go, [Mantil cli](cli_install.md) and an [AWS account credentials](aws_detailed_setup/aws_credentials.md).  
-Mantil is tool for Go developers so you need Go to build you APIs code into Lambda functions. You also need access to an AWS account. 
+Mantil is tool for Go developers so you need [Go](https://go.dev) to build you APIs code into Lambda functions. 
 

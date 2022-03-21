@@ -39,6 +39,7 @@ const config = {
     ({
       navbar: {
         title: 'MantilDocs',
+        hideOnScroll: true,
         logo: {
           alt: 'Mantil Logo',
           src: 'img/logo.svg',
@@ -112,6 +113,15 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      image: 'img/mantil.png',
+      announcementBar: {
+        id: 'GH_stars',
+        content:
+          '⭐️ If you like Mantil, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/mantil-io/mantil">GitHub</a> ⭐️',
+        //backgroundColor: '#fafbfc',
+        //textColor: '#091E42',
+        isCloseable: true,
       },
     }),
 };
