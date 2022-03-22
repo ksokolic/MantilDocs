@@ -51,4 +51,4 @@ This template shows how to use AWS Lambda deployed through Mantil to upload file
 
 ### [NGS chat](https://github.com/mantil-io/example-ngs-chat) - example of chat implemented with NATS
 
-Example of chat built with Mantil and [NGS](https://synadia.com/ngs).
+Example of chat built with Mantil and [NGS](https://synadia.com/ngs) (global communications system built on NATS.io).

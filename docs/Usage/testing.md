@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Testing in Mantil Project
 
 ## Unit tests

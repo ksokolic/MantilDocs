@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Using a Mantil API
 
 After deploying a Mantil API it will be accessible through its API gateway endpoints.

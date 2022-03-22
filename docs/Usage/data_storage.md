@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Data Storage
 
 A key consideration when developing applications is choosing the right data storage option. For traditional server-based applications, the most common option is using a relational database. For serverless applications there are some additional things that need to be considered, such as connection management and pricing models. Here we will attempt to give an overview of the current options for serverless data storage and their advantages and disadvantages.

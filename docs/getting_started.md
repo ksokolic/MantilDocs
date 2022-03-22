@@ -4,20 +4,20 @@ sidebar_position: 4
 
 # Your First Mantil Project
 
-This guide has accompanying video available on [youtube](https://youtu.be/Fp64VgSLoTQ).
+If you prefer watching videos over reading tutorials, a detailed step-by-step guide is available on [youtube](https://youtu.be/Fp64VgSLoTQ).
 
 ## Prerequisites
 
- * Go
+ * [Go](https://go.dev)
  * Mantil [cli](cli_install.md)
  * Mantil [node](aws_detailed_setup/node_install.md)
  
 We assume that you are Go programmer so you have Go installed. After that you
 need to download Mantil cli and set up Mantil node on your AWS account. 
 
-## Your first Mantil project
+## Create new project
 
-Create a new project with `mantil new` command. It just creates [project structure](https://github.com/mantil-io/docs/blob/main/concepts.md#project).
+Create a new project with `mantil new` command. It just creates [project structure](https://github.com/mantil-io/docs/blob/main/concepts.md#project) locally.
 
 ```
 ➜ mantil new my-project
@@ -45,12 +45,10 @@ my-project
 API folder is most interesting. Each Go package in the API folder, after
 deployment, becomes part of you applications API interface.
 
-
 All other project commands are intended to be used from somewhere in the project
 tree. So enter the project now `cd my-project`.  
 
-
-## Project Stage
+## Project stage
 
 One Mantil project can have multiple deployments, each called deployment stage.
 So we can have stage for development, staging, production and so on. Each stage
@@ -96,7 +94,6 @@ pong%
 
 `mantil env --url` returns API endpoint.
 
-
 Each Go package in the api folder becomes route in the project URL. Package is
 expected to have exported New method which returns struct pointer. All exported
 methods of that struct will become accessible on endpoint/package/method URL. If
@@ -109,7 +106,6 @@ func (p *Ping) Default() string {
 	return "pong"
 }
 ```
-
 
 ## Exploring demo project
 

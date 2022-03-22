@@ -3,46 +3,95 @@ slug: /
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Cloud-native development demands a new approach to building, launching, and observing cloud apps. Mantil is a modern open-source framework for writing serverless apps in Go. It allows you to quickly create and deploy applications that use AWS Lambda over a command line interface.
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Start exploring Mantil by **creating a new project**.
 
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Before we can start with the new project make sure you have installed:
 
-## Generate a new site
+ * [Go](https://go.dev)
+ * Mantil [cli](cli_install.md)
 
-Generate a new Docusaurus site using the **classic template**.
+## Start the new project
 
-The classic template will automatically be added to your project after you run the command:
+Generate a new Mantil project using `mantil new my-project`, it just locally creates [project structure](concepts/project.md).
 
-```bash
-npm init docusaurus@latest my-website classic
+```
+➜ mantil new my-project
+
+Your project is ready in ./my-project
+
+➜ tree my-project
+my-project
+├── api
+│   └── ping
+│       ├── ping.go
+│       └── ping_test.go
+├── config
+│   ├── environment.yml
+│   └── state.yml
+├── go.mod
+├── go.sum
+└── test
+    ├── init.go
+    └── ping_test.go
+
+4 directories, 8 files
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Create development environment
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+In Mantil, we [passionately believe](concepts/cloud_development.md) that **developing for the cloud should be done in the cloud**. That means we don't have support for a local environment that fakes real services. Instead, we enable you to easily and quickly create multiple stages of the same project directly in the cloud. 
 
-## Start your site
+To get the most out of Mantil, you should organize at least two stages: development and production. The development stage is your private sandbox where you can quickly iterate and test your changes without affecting stable production.
 
-Run the development server:
+To start developing in the cloud [install the Mantil node](aws_detailed_setup/node_install.md) in your AWS account and set up your development stage:
+```
+➜ mantil stage new development
 
-```bash
-cd my-website
-npm run start
+Creating stage development on node demo
+...
+
+Deploy successful!
+Build time: 625ms, upload: 728ms (5.4 MiB), update: 28.573s
+
+Stage development is ready!
+Endpoint: https://lh5rfrc3gf.execute-api.eu-central-1.amazonaws.com
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Iterate quickly
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+The main complaint about working in the cloud is frustrating build experiences where you need to manually make a number of steps to check minor change. With `mantil watch` app is deployed automatically on every save. Moreover, it is done in seconds, so fluid development workflow is preserved.
+```
+➜ mantil watch
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Watching changes in /my-project/api
+
+Changes spotted! Starting deploy
+Building..
+Uploading changes..
+  ping
+Updating infrastructure..
+
+Deploy successful!
+Build time: 6.464s, upload: 806ms (5.4 MiB), update: 2.806s
+
+Watching changes in /my-project/api
+```
+
+Mantil also supports code testing via standard go tests or by invoking a specific function and getting logs instantly during function execution (not after the function is completed). 
+
+## Deploy to production
+
+Once you are ready to go live create a production stage:
+```
+mantil stage new production
+```
+
+**Congratulation, your AWS Lambda app is live!**
+
+Check [Usage](Usage) and [Your First Mantil Project](getting_started.md) to get into details of working with Mantil. 
