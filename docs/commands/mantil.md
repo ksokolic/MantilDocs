@@ -32,8 +32,4 @@ Makes serverless development with Go and AWS Lambda joyful.
       --no-color   Don't use colors in output
       --version    Show mantil version
 ```
-### LEARN MORE
-```
-  Visit https://github.com/mantil-io/docs to learn more.
-  For further support contact us at support@mantil.com.
-```
+

@@ -94,4 +94,4 @@ mantil stage new production
 
 **Congratulation, your AWS Lambda app is live!**
 
-Check [Usage](Usage) and [Your First Mantil Project](getting_started.md) to get into details of working with Mantil. 
+Check [Usage](Usage/api.md) and [Your First Mantil Project](getting_started.md) to get into details of working with Mantil. 

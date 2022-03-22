@@ -24,8 +24,4 @@ The --stage option accepts any existing stage and defaults to the default stage 
       --help       Show command help
       --no-color   Don't use colors in output
 ```
-### LEARN MORE
-```
-  Visit https://github.com/mantil-io/docs to learn more.
-  For further support contact us at support@mantil.com.
-```
+

@@ -56,8 +56,4 @@ $ curl -X POST https://&lt;stage_endpoint_url&gt;/&lt;api&gt;[/method] [-d '&lt;
       --help       Show command help
       --no-color   Don't use colors in output
 ```
-### LEARN MORE
-```
-  Visit https://github.com/mantil-io/docs to learn more.
-  For further support contact us at support@mantil.com.
-```
+

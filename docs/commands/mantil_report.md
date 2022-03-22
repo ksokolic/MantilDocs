@@ -26,8 +26,4 @@ By default last 3 days of logs are included, you can change that with --days opt
       --help       Show command help
       --no-color   Don't use colors in output
 ```
-### LEARN MORE
-```
-  Visit https://github.com/mantil-io/docs to learn more.
-  For further support contact us at support@mantil.com.
-```
+
