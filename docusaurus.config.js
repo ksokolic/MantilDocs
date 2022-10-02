@@ -84,10 +84,10 @@ const config = {
           {
             title: 'Community',
             items: [
-              {
-                label: 'Slack',
-                href: 'https://join.slack.com/t/mantilcommunity/shared_invite/zt-z3iy0lsn-7zD_6nqEucsgygTvHmnxAw',
-              },
+              // {
+              //   label: 'Slack',
+              //   href: 'https://join.slack.com/t/mantilcommunity/shared_invite/zt-z3iy0lsn-7zD_6nqEucsgygTvHmnxAw',
+              // },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/MantilDev',
