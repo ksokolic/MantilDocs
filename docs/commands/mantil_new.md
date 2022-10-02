@@ -21,11 +21,11 @@ This can be changed by setting the --module-name option.
 
 ### USAGE
 ```
-  mantil new &lt;project&gt; [options]
+  mantil new <project> [options]
 ```
 ### ARGUMENTS
 ```
-  &lt;project&gt;  Name of the new project.
+  <project>  Name of the new project.
 ```
 ### OPTIONS
 ```
@@ -34,13 +34,13 @@ This can be changed by setting the --module-name option.
 ```
 ### EXAMPLES
 ```
-  ==&gt; new project with default structure:
+  ==> new project with default structure:
   $ mantil new my-project
 
-  ==&gt; new project from built-in template:
+  ==> new project from built-in template:
   $ mantil new my-project --from excuses
 
-  ==&gt; new project from any available template:
+  ==> new project from any available template:
   $ mantil new my-project --from https://github.com/mantil-io/template-excuses
 
 ```

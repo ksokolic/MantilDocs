@@ -19,11 +19,11 @@ mantil invoke ping/hello
 
 ### USAGE
 ```
-  mantil generate api &lt;name&gt; [options]
+  mantil generate api <name> [options]
 ```
 ### ARGUMENTS
 ```
-  &lt;name&gt;      Name of the API to generate.
+  <name>      Name of the API to generate.
 ```
 ### OPTIONS
 ```

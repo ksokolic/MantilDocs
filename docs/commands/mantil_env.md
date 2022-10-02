@@ -24,10 +24,10 @@ If not specified (--stage option) default project stage is used.
 ```
 ### EXAMPLES
 ```
-  ==&gt; Set environment variables in terminal
+  ==> Set environment variables in terminal
   $ eval $(mantil env)
 
-  ==&gt; Use current stage api url in other shell commands
+  ==> Use current stage api url in other shell commands
   $ curl -X POST $(mantil env -url)/ping
 ```
 ### GLOBAL OPTIONS

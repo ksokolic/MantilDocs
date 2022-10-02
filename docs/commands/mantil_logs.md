@@ -14,11 +14,11 @@ If the --tail option is set the process will keep running and polling for new lo
 
 ### USAGE
 ```
-  mantil logs &lt;api&gt; [options]
+  mantil logs <api> [options]
 ```
 ### ARGUMENTS
 ```
-  &lt;api&gt;      Name of the API. Your APIs are in /api folder.
+  <api>      Name of the API. Your APIs are in /api folder.
 ```
 ### OPTIONS
 ```

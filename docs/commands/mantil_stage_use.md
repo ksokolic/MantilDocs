@@ -8,11 +8,11 @@ Sets default project stage
 
 ### USAGE
 ```
-  mantil stage use &lt;stage&gt;
+  mantil stage use <stage>
 ```
 ### ARGUMENTS
 ```
-  &lt;stage&gt;  Name of the stage which will be default.
+  <stage>  Name of the stage which will be default.
 ```
 ### GLOBAL OPTIONS
 ```

@@ -39,12 +39,12 @@ and what account will be managed by command.
   You must provide credentials for Mantil to access your AWS account.
   There are three ways to provide credentials.
 
-  ==&gt; specifiy access keys as arguments:
+  ==> specifiy access keys as arguments:
   $ mantil aws install --aws-access-key-id=AKIAIOSFODNN7EXAMPLE \
                        --aws-secret-access-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY \
                        --aws-region=us-east-1
 
-  ==&gt; read access keys from environment variables:
+  ==> read access keys from environment variables:
   $ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
   $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
   $ export AWS_DEFAULT_REGION=us-east-1
@@ -52,7 +52,7 @@ and what account will be managed by command.
 
   Reference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 
-  ==&gt; use your named AWS profile form ~/.aws/config
+  ==> use your named AWS profile form ~/.aws/config
   $ mantil aws install --aws-profile=my-named-profile
 
   Reference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html

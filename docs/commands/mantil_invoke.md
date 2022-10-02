@@ -19,15 +19,17 @@ function log line is preffixed with λ symbol. You can hide that logs with the
 --no-log option.
 
 This is a convenience method and provides similar output to calling:
-$ curl -X POST https://&lt;stage_endpoint_url&gt;/&lt;api&gt;[/method] [-d '&lt;data&gt;'] [-i]
+```
+  curl -X POST https://<stage_endpoint_url>/<api>[/method] [-d '<data>'] [-i]
+```
 
 ### USAGE
 ```
-  mantil invoke &lt;api&gt;[/method] [options]
+  mantil invoke <api>[/method] [options]
 ```
 ### ARGUMENTS
 ```
-  &lt;api&gt;      Name of the API. Your APIs are in /api folder.
+  <api>      Name of the API. Your APIs are in /api folder.
   [/method]  Method name in Go source code.
             Default method will called if not spedified.
 ```
@@ -40,12 +42,12 @@ $ curl -X POST https://&lt;stage_endpoint_url&gt;/&lt;api&gt;[/method] [-d '&lt;
 ```
 ### EXAMPLES
 ```
-  ==&gt; invoke Default method in Ping api
+  ==> invoke Default method in Ping api
   $ mantil invoke ping
   200 OK
   pong
 
-  ==&gt; invoke Hello method in Ping api with 'Mantil' data
+  ==> invoke Hello method in Ping api with 'Mantil' data
   $ mantil invoke ping/hello -d 'Mantil'
   200 OK
   Hello, Mantil

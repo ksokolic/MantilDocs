@@ -14,11 +14,11 @@ This behavior can be disabled using the --yes option.
 
 ### USAGE
 ```
-  mantil stage destroy &lt;name&gt; [options]
+  mantil stage destroy <name> [options]
 ```
 ### ARGUMENTS
 ```
-  &lt;name&gt;  Name for the stage to destroy.
+  <name>  Name for the stage to destroy.
 ```
 ### OPTIONS
 ```

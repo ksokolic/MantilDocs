@@ -14,11 +14,11 @@ Otherwise, you will be asked to pick a node. The node can also be specified via 
 
 ### USAGE
 ```
-  mantil stage new &lt;name&gt; [options]
+  mantil stage new <name> [options]
 ```
 ### ARGUMENTS
 ```
-  &lt;name&gt;  Name for the new stage.
+  <name>  Name for the new stage.
 ```
 ### OPTIONS
 ```
